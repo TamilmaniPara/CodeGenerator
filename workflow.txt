@@ -1,0 +1,53 @@
+VS Code Copilot
+      │
+      ├── Read YAML/JSON
+      ├── Read/analyze Python code
+      ├── Identify all data sources
+      ├── Identify data elements
+      ├── Get review metadata
+      │
+      ▼
+generated_jira_task.json
+      │
+      ▼
+Python create_jira_task.py
+      │
+      ├── Read JSON
+      ├── Connect to Jira
+      ├── Create Task
+      └── Print Jira key/URL
+
+
+
+project/
+│
+├── config/
+│   └── review_config.yaml
+│
+├── src/
+│   ├── ...
+│
+├── .github/
+│   └── copilot/
+│       └── instructions/
+│
+├── jira/
+│   ├── generated_jira_task.json
+│   └── create_jira_task.py
+│
+└── README.md
+
+
+
+generated_jira_task.json
+          │
+          ▼
+    Python script
+          │
+          ├── Read JSON
+          ├── Connect Jira
+          ├── Get Epic
+          ├── Get assignee
+          ├── Get reporter
+          ├── Build description
+          └── Create Task
