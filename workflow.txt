@@ -51,3 +51,66 @@ generated_jira_task.json
           ├── Get reporter
           ├── Build description
           └── Create Task
+
+
+
+
+
+
+
+
+
+
+
+JSON/YAML
+   │
+   ├── Epic ID
+   ├── Review ID / Name
+   ├── Metadata KVP
+   ├── Source name / ID
+   └── Class / code file path
+          │
+          ▼
+     Copilot / LLM
+          │
+          ├── Analyze code
+          ├── Identify data elements
+          ├── Identify source → table → column
+          ├── Understand transformations
+          └── Generate structured output
+          │
+          ▼
+    ┌─────────────────┐
+    │   Arize Phoenix │
+    │                 │
+    │ Trace AI calls  │
+    │ Evaluate output │
+    │ Debug failures  │
+    └─────────────────┘
+          │
+          ▼
+   Validated JSON
+          │
+          ▼
+       Python
+          │
+          ▼
+       Jira
+
+
+data-element-analysis
+│
+├── review_id
+│     REV123
+│
+├── review_name
+│     Trade Risk Review
+│
+├── data_element_count
+│     15
+│
+├── valid_elements
+│     14
+│
+└── invalid_elements
+      1
